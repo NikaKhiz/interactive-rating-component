@@ -31,5 +31,3 @@ function App() {
 }
 
 export default App;
-
-// dekstop1440 mobile 375 
