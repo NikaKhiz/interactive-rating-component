@@ -1,9 +1,10 @@
+import { GlobalStyles } from './components/Global/GlobalStyles';
 import Survey from './components/Survey';
 import Scores from './components/Scores';
 import Submit from './components/Submit';
 import Output from './components/Output';
+import { StyledContent } from './components/Containers/StyledContent';
 import { useState } from "react";
-
 
 function App() {
     const [rate, setRate] = useState(0);
@@ -11,21 +12,25 @@ function App() {
 
     if (!submited) {
         return (
-            <div className="App">
-                <div className='content'>
+            <>
+                <GlobalStyles />
+                <StyledContent>
                     <Survey />
                     <Scores setRate={setRate} />
                     <Submit setSubmit={setSubmited} />
-                </div>
-            </div>
+                </StyledContent>
+            </>
+
         );
     } else {
         return (
-            <div className="App">
-                <div className='content'>
+            <>
+                <GlobalStyles />
+                <StyledContent>
                     <Output rateVal={rate} />
-                </div>
-            </div>
+                </StyledContent>
+            </>
+
         );
     }
 }
