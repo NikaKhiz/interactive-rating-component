@@ -31,38 +31,6 @@ body {
   font-style: normal;
 }
 
-h1 {
-  color: var(--clr-White);
-  font-size: 28px;
-  text-transform: capitalize;
-}
-
-p {
-  color: var(--clr-LightGrey);
-  font-size: 15px;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
-.star-cont {
-  display: grid;
-  place-items: center;
-  width: 50px;
-  height: 50px;
-  padding: 1rem;
-  border-radius: 50%;
-  background-color: var(--clr-DarkBlue);
-
-}
-
-.survey-heading {
-  margin: 2rem 0 .5rem 0;
-}
-
-.survey-calling {
-  font-weight: 400;
-}
-
 .content {
   max-width: 412px;
   max-height: 416px;
@@ -74,53 +42,6 @@ p {
   flex-direction: column;
   gap: 2rem;
   margin: 24px;
-}
-
-.scores {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.score {
-  display: grid;
-  place-items: center;
-  width: 50px;
-  padding: 12px;
-  background-color: var(--clr-DarkBlue);
-  color: var(--clr-MediumGrey);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-}
-
-.score:hover {
-  background-color: var(--clr-Orange);
-  color: var(--clr-White);
-}
-
-.score.active {
-  background-color: var(--clr-MediumGrey);
-  color: var(--clr-White);
-}
-
-.submit-btn {
-  width: 100%;
-  padding: 11px;
-  outline: none;
-  border: none;
-  border-radius: 22px;
-  background-color: var(--clr-Orange);
-  color: var(--clr-White);
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-  letter-spacing: 2px;
-}
-
-.submit-btn:hover {
-  background-color: var(--clr-White);
-  color: var(--clr-Orange);
 }
 
 .thanks {

@@ -1,4 +1,6 @@
 import thanksImg from '.././images/illustration-thank-you.svg';
+import StyledHeading from './Text/StyledHeadings';
+import StyledParagraph from './Text/StyledParagraph';
 
 const Output = ({ rateVal }) => {
     return (
@@ -10,8 +12,8 @@ const Output = ({ rateVal }) => {
                 </div>
             </div>
             <div className="survey-calling">
-                <h1>thank you!</h1>
-                <p class="survey-calling">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+                <StyledHeading>thank you!</StyledHeading>
+                <StyledParagraph className='survey-calling'>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</StyledParagraph>
             </div>
 
         </div>

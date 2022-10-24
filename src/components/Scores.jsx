@@ -1,6 +1,8 @@
+import { Score } from "./Containers/ScoresCont";
+import { ScoresCont } from "./Containers/ScoresCont";
 const Scores = ({ setRate }) => {
     let scores = [1, 2, 3, 4, 5];
-    let scoreItems = scores.map(item => <div key={item} className="score">{item}</div>)
+    let scoreItems = scores.map(item => <Score key={item} className="score">{item}</Score>)
 
     const handleScore = (e) => {
         if (!e.target.classList.contains('score')) return;
@@ -12,9 +14,9 @@ const Scores = ({ setRate }) => {
     }
 
     return (
-        <div className="scores" onClick={handleScore}>
+        <ScoresCont  onClick={handleScore}>
             {scoreItems}
-        </div>
+        </ScoresCont>
     );
 }
 

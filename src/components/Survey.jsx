@@ -1,17 +1,20 @@
 import StarImage from '.././images/icon-star.svg';
+import { StyledStarCont } from './Containers/StarCont';
+import StyledHeading from './Text/StyledHeadings';
+import StyledParagraph from './Text/StyledParagraph';
 
 const Survey = () => {
     return (
         <div className="survey">
-            <div className="star-cont">
+            <StyledStarCont>
                 <img src={StarImage} alt="star icon" />
-            </div>
-            <h1 className="survey-heading">
+            </StyledStarCont>
+            <StyledHeading className='survey-heading'>
                 How did we do?
-            </h1>
-            <p className="survey-calling">
+            </StyledHeading>
+            <StyledParagraph className='survey-calling'>
                 Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
-            </p>
+            </StyledParagraph>
         </div>
     );
 }
